@@ -97,14 +97,26 @@ cantidadPerros = teclado.nextInt();
 
 	teclado.close(); */
 
+
+//---------------------------------------METODOS PARA USAR HERENCIAS------------------------------------------
+
+/* 	public (dato) (nombre clase) extends (Clase padre){
+	public (dato) atributo;
+	public (nombre clase hijo)(){
+		super(): -------- el constructor por defecto de una clase hija debe tener la funcion super()
+		----------------- superpone los datos del animal padre y los que tiene propios el hijo  
 	}
-}
+	Luego generamos los contructores
+	LUego generamos el metodo toString() ----- si vas a mostrar las clases del padre en hijo super.tuString()
+}*/
 
 
 // OBJETOS QUE TENEMOS:
 //COMPUTADOR, SMARTPHONE, SMARTTV
 
-//CLASE PADRE: ArticulosElectronicos
+//CLASE PADRE: ArticuloElectronico
+// se generan los constructores, los getter y los setter 
+// el metodo tostring()
 
 //ATRIBUTOS CLASE PADRE:
 
@@ -124,3 +136,14 @@ cantidadPerros = teclado.nextInt();
  * Interactuar con aplicaciones
  * Jugar
  */
+
+
+
+
+
+
+
+
+
+}
+}

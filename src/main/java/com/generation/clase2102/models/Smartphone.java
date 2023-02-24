@@ -1,4 +1,6 @@
 package com.generation.clase2102.models;
+
+/* 
 //----------------------------------OBJETO CON ATRIBUTOS------------------------------------------
 
 public class Smartphone {
@@ -86,3 +88,60 @@ public String interactuarApp(){
 }
 
 }
+
+*/
+
+//----------------------------------OBJETO CON ATRIBUTOS------------------------------------------
+
+public class Smartphone extends ArticuloElectronico{
+    public Integer capacidad;
+    public String procesador;
+    public Boolean camara;
+
+//-------------------------------------------CONSTRUCTOR--------------------------------------------
+    public Smartphone() {
+        super();
+    }
+    public Smartphone(String marca, String modelo, String color, String sistemaOperativo, Integer tamanio,
+            Boolean bluetooth, Integer capacidad, String procesador, Boolean camara) {
+                super(marca, modelo, color, sistemaOperativo, tamanio, bluetooth);
+                this.capacidad = capacidad;
+                this.procesador = procesador;
+        this.camara = camara;
+    }
+
+//-----------------------------------------GETTER AND SETTER------------------------------------------
+
+    
+    public Integer getCapacidad() {
+        return capacidad;
+    }
+    public void setCapacidad(Integer capacidad) {
+        this.capacidad = capacidad;
+    }
+    public String getProcesador() {
+        return procesador;
+    }
+    public void setProcesador(String procesador) {
+        this.procesador = procesador;
+    }
+    public Boolean getCamara() {
+        return camara;
+    }
+    public void setCamara(Boolean camara) {
+        this.camara = camara;
+    }
+
+
+//-------------------------------------------FUNCIONALIDADES------------------------------------------
+
+    public void grabar(){
+        System.out.println("Grabó su TikTok");
+    }
+
+    
+    @Override
+    public String toString() {
+        return super.toString() + " {capacidad=" + capacidad + ", procesador=" + procesador + ", camara=" + camara + "}";
+    }
+    }

@@ -1,5 +1,8 @@
 package com.generation.clase2102.models;
+
+/* 
 //----------------------------------OBJETO CON ATRIBUTOS---------------------------------------------
+
 
 public class Computador {
     public String marca;
@@ -115,3 +118,42 @@ public String reproducirContenido(){
 
 }
 
+*/
+
+public class Computador extends ArticuloElectronico{
+    public Integer capacidad;
+    public String procesador;
+
+    public Computador() {
+        super();
+    }
+    public Computador(String marca, String modelo, String color, String sistemaOperativo, Integer tamanio,
+            Boolean bluetooth, Integer capacidad, String procesador) {
+        super(marca, modelo, color, sistemaOperativo, tamanio, bluetooth);
+        this.capacidad = capacidad;
+        this.procesador = procesador;
+    }
+    public Integer getCapacidad() {
+        return capacidad;
+    }
+    public void setCapacidad(Integer capacidad) {
+        this.capacidad = capacidad;
+    }
+    public String getProcesador() {
+        return procesador;
+    }
+    public void setProcesador(String procesador) {
+        this.procesador = procesador;
+    }
+
+    public void jugar(){
+        System.out.println("Abrir Warzone");
+    }
+
+    @Override
+    public String toString() {
+        return super.toString()+ "{capacidad=" + capacidad + ", procesador=" + procesador + "}";
+    }
+
+    
+}
