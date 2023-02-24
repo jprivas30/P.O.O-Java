@@ -49,7 +49,7 @@ misPerros.add(perroDefault);
 System.out.println(misPerros);
 
 */
-
+/* 
 
 //-------------------------------------------EJERCICIO CLASES---------------------------------------------------
 
@@ -95,8 +95,32 @@ cantidadPerros = teclado.nextInt();
 
 //SE CIERRA EL TECLADO 
 
-	teclado.close();
-}
+	teclado.close(); */
+
+	}
 }
 
 
+// OBJETOS QUE TENEMOS:
+//COMPUTADOR, SMARTPHONE, SMARTTV
+
+//CLASE PADRE: ArticulosElectronicos
+
+//ATRIBUTOS CLASE PADRE:
+
+/* Marca:
+ * Modelo:
+ * Tamanio:
+ * Color:
+ * Bluetooth:
+ * SistemaOperativo:
+ */
+
+//FUNCIONES: 
+
+/*
+ * Reproducir medios audiovisuales
+ * Navegar en internet 
+ * Interactuar con aplicaciones
+ * Jugar
+ */
