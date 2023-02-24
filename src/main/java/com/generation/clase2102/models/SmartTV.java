@@ -132,7 +132,7 @@ public void reproducir(){
 
 @Override
 public String toString() {
-    return super.toString() + "{resolucion=" + resolucion + ", tipoDePantalla=" + tipoDePantalla + ", controlVoz=" + controlVoz
+    return "SmartTV \n" + super.toString() + " {resolucion=" + resolucion + ", tipoDePantalla=" + tipoDePantalla + ", controlVoz=" + controlVoz
             + "}";
 }
 }

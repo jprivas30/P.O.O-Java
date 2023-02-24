@@ -91,5 +91,12 @@ public class ArticuloElectronico {
         System.out.println("abre youtube");
     }
 
+    @Override
+    public String toString() {
+        return " {marca=" + marca + ", modelo=" + modelo + ", color=" + color + ", sistemaOperativo="
+                + sistemaOperativo + ", tamanio=" + tamanio + ", bluetooth=" + bluetooth + "}";
+    }
 
+
+    
 }

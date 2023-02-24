@@ -139,9 +139,9 @@ public class Smartphone extends ArticuloElectronico{
         System.out.println("Grabó su TikTok");
     }
 
-    
+
     @Override
     public String toString() {
-        return super.toString() + " {capacidad=" + capacidad + ", procesador=" + procesador + ", camara=" + camara + "}";
+        return "Smartphone \n" +super.toString() + " {capacidad=" + capacidad + ", procesador=" + procesador + ", camara=" + camara + "}";
     }
     }

@@ -120,9 +120,14 @@ public String reproducirContenido(){
 
 */
 
+//----------------------------------OBJETO CON ATRIBUTOS------------------------------------------
+
+
 public class Computador extends ArticuloElectronico{
     public Integer capacidad;
     public String procesador;
+
+//-------------------------------------------CONSTRUCTOR--------------------------------------------
 
     public Computador() {
         super();
@@ -133,6 +138,9 @@ public class Computador extends ArticuloElectronico{
         this.capacidad = capacidad;
         this.procesador = procesador;
     }
+
+//-----------------------------------------GETTER AND SETTER------------------------------------------
+
     public Integer getCapacidad() {
         return capacidad;
     }
@@ -150,9 +158,11 @@ public class Computador extends ArticuloElectronico{
         System.out.println("Abrir Warzone");
     }
 
+//-------------------------------------------FUNCIONALIDADES------------------------------------------
+
     @Override
     public String toString() {
-        return super.toString()+ "{capacidad=" + capacidad + ", procesador=" + procesador + "}";
+        return "Computador \n" + super.toString()+ "{capacidad=" + capacidad + ", procesador=" + procesador + "}";
     }
 
     

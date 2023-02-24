@@ -8,7 +8,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.SpringCacheAnnotationParser;
 import org.springframework.cache.support.NullValue;
 
+import com.generation.clase2102.models.Computador;
 import com.generation.clase2102.models.Perro;
+import com.generation.clase2102.models.SmartTV;
+import com.generation.clase2102.models.Smartphone;
 
 @SpringBootApplication
 public class Clase2102Application {
@@ -136,6 +139,17 @@ cantidadPerros = teclado.nextInt();
  * Interactuar con aplicaciones
  * Jugar
  */
+
+
+Computador hp = new Computador("hp","x360s","Plata","Windows",20,true,256,"Intel core i9");
+
+Smartphone samsungS22 = new Smartphone("Samsung","S22","Negro","Android",5,true,128,"snapdragon", true);  
+
+SmartTV lg = new SmartTV("lg", "lg3490","Plata", "WebOS",55,true,"8k","Qled",true );
+
+System.out.println(hp);
+System.out.println(samsungS22);
+System.out.println(lg);
 
 
 
